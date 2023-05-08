@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*!!!!!HEADER!!!!!*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon-site{
+    height: 50px;
+}
+.icon-name{
+    font-size: 40px;
+    font-family: "Agency FB", serif;
+    color: #007a7a;
+    text-transform: uppercase;
+    user-select: none;
+}
+.nav{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__link{
+    font-family: "Bell MT", serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    transition: all .2s ease;
+    user-select: none;
+}
+.nav__link:hover{
+    color: #4646ff;
+}
+.search-panel{
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.search--image{
+    height: 20px;
+    margin-right: 10px;
+}
+.search-input{
+    max-width: 150px;
+    height: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid #c4c4c4;
+    outline:none;
+    padding-left: 5px;
+}
+.search-button{
+    height: 31px;
+    width: 80px;
+    color: white;
+    background-color: #343434;
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+    transition: all .3s ease;
+}
+.search-button:hover{
+    color: #343434;
+    background-color: #e8e8e8;
+}
+
+/*!!!!!MAIN SECTION!!!!!*/
+
+.main-info-section{
+    margin: auto;
+    border-radius: 30px;
+    max-width: 1200px;
+    height: 400px;
+    background-image: url("img/purple-sunset.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.blur{
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(1px);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.city-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+.city-name-container{
+    font-family: "Bell MT", serif;
+    color: white;
+    font-size: 50px;
+}
+.data-container{
+    width: 200px;
+    font-family: "Bell MT", serif;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.data-container span{
+    display: block;
+}
+.forecast-info-container{
+    height: 150px;
+    width: 320px;
+    background-color: #7c7cfc;
+    border-radius: 20px;
+    color: white;
+    font-family: "Bell MT", serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forecast__inner{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 20px 0 20px;
+}
+.forecast__inner span{
+    font-size: 20px;
+}
+.weather-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    height: 250px;
+    background-color: #7c7cfc;
+    border-radius: 20px;
+    color: white;
+    font-family: "Bell MT", serif;
+    font-size: 40px
+}
+.weather-image-container{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.temperature-scale-button{
+    width: 40px;
+    height: 20px;
+    border: 0;
+    border-radius: 7px;
+    background-color: #006464;
+    color: white;
+    font-family: "Bell MT", serif;
+    text-align: center;
+    transition: all .2s ease;
+}
+.temperature-scale-button:hover{
+    background-color: #004141;
+}
+
+/*!!!!!CITIES!!!!!*/
+
+.cities-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto 0;
+}
+
+.kiev-info, .london-info, .new-york-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 200px;
+    height: 220px;
+    background-color: #7c7cfc;
+    border-radius: 20px;
+    padding-top: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Bell MT", serif;
+    border: 1px solid #c4c4c4;
+    transition: all 0.3s ease;
+}
+.kiev-info{
+    background-image: url("img/motherland.jpg");
+    background-position: 60% 50px;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    user-select: none;
+}
+.london-info{
+    background-image: url("img/london.jpg");
+    background-position: 50% 50px;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    user-select: none;
+}
+.new-york-info{
+    background-image: url("img/independence.jpg");
+    background-position: 50% 50px;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    user-select: none;
+}
+
+.kiev-info:hover, .london-info:hover, .new-york-info:hover{
+    color: black;
+    background-color: white;
+    background-size: 200%;
+}
+
+
+

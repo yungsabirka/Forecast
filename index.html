@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+<header>
+	<div class="logo">
+		<img src="img/icon_site.png" class="icon-site">
+		<span class="icon-name">siweather</span>
+	</div>
+	<nav class="nav">
+		<a href="#" class="nav__link">Home</a>
+		<a href="#" class="nav__link">News</a>
+		<a href="#" class="nav__link">Contact</a>
+		<a href="#" class="nav__link">Offer</a>
+	</nav>
+	<div class="search-panel">
+		<img src="img/lupa.png" class="search--image">
+		<input type="text" class="search-input">
+		<button class="search-button">Search</button>
+	</div>
+</header>
+<section class="main-info-section">
+	<div class="blur">
+		<article class="city-container">
+			<div class="city-name-container"></div>
+			<div class="data-container"></div>
+			<div class="forecast-info-container"></div>
+		</article>
+		<article class="weather-container">
+			<div class="weather-info">
+				<div class="weather-image-container"></div>
+				<div class="temperature-container">
+					<span class="main-temperature"></span>
+				</div>
+				<div class="scale-button-container">
+					<button class="temperature-scale-button">°F</button>
+					<button class="temperature-scale-button">°C</button>
+				</div>
+
+			</div>
+		</article>
+	</div>
+</section>
+<section class="cities-section">
+	<div class="kiev-info">
+		<span>Kyiv</span>
+	</div>
+	<div class="london-info">
+		<span>London</span>
+	</div>
+	<div class="new-york-info">
+		<span>New-York</span>
+	</div>
+
+</section>
+<script type="module" src="RenderInfo.js"></script>
+<script type="module" src="logic.js"></script>
+</body>
+</html>
