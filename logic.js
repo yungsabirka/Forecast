@@ -4,18 +4,9 @@ let kyivId = 703448;
 let londonId = 2643743;
 let newYorkId = 5128638;
 
-let kyivWeatherForeCast = "https://api.openweathermap.org/data/2.5/forecast?id=703448&appid=bf35cac91880cb98375230fb443a116f";
-
-
 RenderInfo.setCityButton(londonId, ".london-info", "Europe/London");
 RenderInfo.setCityButton(kyivId,".kiev-info", "Europe/Kyiv");
 RenderInfo.setCityButton(newYorkId, ".new-york-info", 'America/New_York')
-
-
-fetch(kyivWeatherForeCast)
-    .then(response => response.json())
-    .then(json => console.log(json));
-
 
 document.querySelector(".temperature-scale-button")
     .addEventListener("click", function (){
