@@ -21,7 +21,7 @@ export class AddForecast{
     }
     addImages(container, number){
         let img = new Image(50, 50);
-        img.src = 'http://openweathermap.org/img/wn/' + this.cityForecastData.list[number].weather[0]['icon'] + '@2x.png';
+        img.src = 'https://openweathermap.org/img/wn/' + this.cityForecastData.list[number].weather[0]['icon'] + '@2x.png';
         container.append(img);
         container.append(this.cityForecastData.list[number].weather[0].main)
         return container;

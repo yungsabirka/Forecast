@@ -10,7 +10,7 @@ export class AddCurrentWeather {
 
     addWeatherImage() {
         let img = new Image();
-        img.src = 'http://openweathermap.org/img/wn/' + this.cityData.weather[0]['icon'] + '@2x.png';
+        img.src = 'https://openweathermap.org/img/wn/' + this.cityData.weather[0]['icon'] + '@2x.png';
         document.querySelector(".weather-image-container").innerHTML = '';
         document.querySelector(".weather-image-container").append(img);
         document.querySelector(".weather-image-container").insertAdjacentHTML("beforeend", this.cityData.weather[0].main)
